@@ -20,6 +20,10 @@ app.use("/api/reviews",   require("./routes/reviews"));
 app.use("/api/admin",     require("./routes/admin"));
 app.use("/api/payments",  require("./routes/payments"));
 
+// app.get("/", (req, res) => {
+//   res.send("<p>Server is running ✓</p>");
+// });
+
 // Health check
 app.get("/", (req, res) => res.json({ message: "WeddingWala API Running ✅" }));
 
@@ -36,3 +40,6 @@ mongoose
     console.error("❌ DB Connection Error:", err.message);
     process.exit(1);
   });
+
+
+  // testing 
